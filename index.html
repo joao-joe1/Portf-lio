@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-N/FdCbM6/KwKs56s3W8YFeXeAMlZPz4D4OjK8FAVCy1mCezPKpSvPbdceWYjF+m9XOhgZlUkMy6GcL6d60ov6w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <div class="left">
+        <div class="logo-name" data-aos="fade-right">
+            <img src="assets/img/Screenshot_2.png" alt="Logo">
+            <h1>Joao Vitor Portfólio</h1>
+        </div>
+        <div class="logo" data-aos="fade-right">
+            <div class="logo-container">
+                <img src="assets/img/c-sharp.png" alt="Logo" class="logo">
+                <div class="description">C# é uma linguagem de programação moderna e orientada a objetos desenvolvida
+                    pela Microsoft.</div>
+            </div>
+            <div class="logo-container">
+                <img src="assets/img/js.png" alt="Logo" class="logo">
+                <div class="description">JavaScript é uma linguagem de programação interpretada, originalmente
+                    implementada nos navegadores web para criar efeitos interativos e dinâmicos em páginas web.</div>
+            </div>
+            <div class="logo-container">
+                <img src="assets/img/html.png" alt="Logo" class="logo">
+                <div class="description">HTML é uma linguagem de marcação utilizada na construção de páginas na Web.
+                </div>
+            </div>
+            <div class="logo-container">
+                <img src="assets/img/css-3.png" alt="Logo" class="logo">
+                <div class="description">Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web.
+                </div>
+            </div>
+        </div>
+        <h1 class="texto1" data-aos="fade-right" data-aos-duration="5000" data-aos-delay="100" data-aos-offset="10"
+        data-aos-easing="ease-in-out">Transforme seu código em soluções poderosas que impulsionam o mundo!
+        </h1>
+        <h2 class="texto2" data-aos="fade-right" data-aos="fade-right" data-aos-duration="5000" data-aos-delay="200" data-aos-offset="10"
+        data-aos-easing="ease-in-out">.NET Developer and Web Developer</h2>
+        <h3 class="texto3" data-aos="fade-right" data-aos-duration="5000" data-aos-delay="300" data-aos-offset="10"
+            data-aos-easing="ease-in-out">Eu transformo linhas de código em soluções que impulsionam o mundo digital,
+            comunicando ideias de maneira clara e eficaz para todos os envolvidos no projeto.</h3>
+        <button onclick="window.location.href = 'sobremim.html'" class="pulse-button" data-aos="fade-right"> Sobre
+            Mim</button>
+    </div>
+    <div class="right">
+        <img src="assets/img/J logo.png" alt="Logo J" data-aos="fade-down">
+    </div>
+
+    <script>
+        document.querySelector('.button').addEventListener('click', function () {
+            document.querySelector('.page').classList.add('page-transition');
+            setTimeout(function () {
+                window.location.href = 'sobremim.html';
+            }, 500);
+        });
+    </script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            Swal.fire({
+                icon: 'info',
+                title: 'Este site está em beta!',
+                html: 'Pode conter alguns bugs de animação. Se encontrar algum, por favor, nos avise.',
+                footer: '<a href="https://www.instagram.com/santos_joaotmz/">Clique aqui para entrar em contato</a>'
+            })
+        });
+    </script> -->
+</body>
+
+</html>

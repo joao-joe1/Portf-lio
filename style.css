@@ -1,0 +1,229 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #FEFEFE;
+}
+
+.left {
+    background-color: #212020;
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.right {
+    background-color: #010101;
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo-name {
+    margin-left: 5px;
+    margin-right: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.logo-name img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-name h1 {
+    font-size: 16px;
+    margin: 0;
+    color: #FEFEFE;
+}
+
+.texto1 {
+
+    margin-left: 25px;
+    font-size: 24px;
+}
+
+.texto2 {
+    margin-top: 30px;
+    margin-left: 25px;
+    color: #CFCFCF;
+    font-size: 18px;
+}
+
+.texto3 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.5;
+    margin: 0 0 20px;
+    margin-left: 27px;
+    font-size: 15px;
+    color: #CFCFCF;
+}
+
+.logo {
+    top: 0;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.logo img {
+    height: 34px;
+    margin-right: 10px;
+    transition: transform 0.2s ease;
+}
+
+.logo img:hover {
+    transform: translateY(-10px);
+}
+
+.logo-container {
+    position: relative;
+}
+
+.description {
+    position: absolute;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 2;
+}
+
+.logo-container:hover .description {
+    top: 100%;
+    display: block;
+}
+
+div.logo-name {
+    animation: quick 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes quick {
+    0% {
+        border-bottom: 0px solid #000000;
+    }
+
+    100% {
+        border-bottom: 2px solid #ff3a5e;
+    }
+}
+
+button {
+    cursor: pointer;
+    margin-left: 230px;
+    background-color: #ff3a5e;
+    color: #FEFEFE;
+    border: none;
+    padding: 18px 30px;
+    border-radius: 25px;
+    top: 10px;
+    left: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pulse-button {
+    background-color: #ff3a5e;
+    color: #FEFEFE;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.pulse-button:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(0);
+    transition: transform 0.6s ease-out;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.pulse-button:hover:before {
+    transform: scale(1);
+}
+
+button:hover {
+    box-shadow: 0 0 10px 3px #ff3a5e;
+}
+
+button:active {
+    transform: scale(1.1);
+}
+
+button {
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2ecc71;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.page-transition {
+    animation: fade-out 0.5s ease-in-out forwards;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

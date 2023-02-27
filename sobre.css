@@ -1,0 +1,383 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #FEFEFE;
+    background-color: #212020;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.menu {
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 100%;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu li a {
+    color: #8A8A8A;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.menu li a:hover {
+    color: #ff3a5e;
+}
+
+.menu a.active {
+    color: #FEFEFE;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff3a5e;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #212020;
+    border-radius: 20px;
+}
+
+.logo-name {
+    margin-left: 3px;
+    margin-right: 1150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.logo-name img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-name h1 {
+    font-size: 16px;
+    margin: 0;
+    color: #FEFEFE;
+}
+
+div.logo-name {
+    animation: quick 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes quick {
+    0% {
+        border-bottom: 0px solid #000000;
+    }
+
+    100% {
+        border-bottom: 2px solid #ff3a5e;
+    }
+}
+
+#sobre-mim {
+    color: #CFCFCF;
+    text-align: center;
+}
+
+#sobre-mim h3 {
+    color: #FEFEFE;
+}
+
+.sobre-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.sobre-box div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-box h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sobre-box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Estilo da seção "Projetos" */
+#projetos {
+    min-height: 10vh;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#projetos h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/* Estilo da seção "Contatos" */
+#contatos {
+    min-height: 50vh;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#contatos h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
+.animated {
+    animation-duration: 1s;
+}
+
+/* exemplo de animação específica */
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+/* controle de atraso para cada seção */
+#projetos {
+    animation-delay: 0.5s;
+}
+
+#contatos {
+    animation-delay: 1s;
+}
+
+.section-anim {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.projetos-realizados {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projetos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.projeto {
+    border: 1px solid #ff3a5e;
+    background-color: #212020;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+.projeto h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.projetos-realizados p {
+    color: #CFCFCF;
+}
+
+.bibliotechno-info {
+    display: none;
+}
+
+.bibliotechno-info {
+    color: #ffffff;
+    background-color: #212020;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-height: 100;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    margin: 20px 0;
+}
+
+.bibliotechno-info h2 {
+    color: #ff3a5e;
+    font-size: 26px;
+    margin-top: 0;
+}
+
+.bibliotechno-info p {
+    line-height: 1.5;
+}
+
+.bibliotechno-info ul {
+    margin: 10px 0 0 20px;
+    padding-left: 0;
+}
+
+.bibliotechno-info li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+.portfolio-info {
+    display: none;
+}
+
+.projeto p {
+    color: #CFCFCF;
+}
+
+#port {
+    border: 1px solid #00a3ff;
+}
+
+.info-button {
+    background-color: #ff3a5e;
+    border: none;
+    color: #FEFEFE;
+    cursor: pointer;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#botao1 {
+    box-shadow: #ff3a5e9d 0 0 10px;
+}
+
+#botao2 {
+    box-shadow: #00a2ff73 0 0 10px;
+    color: #FEFEFE;
+    background-color: #00a3ff;
+}
+
+.info-button i {
+    font-size: 12px;
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+}
+
+.info-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.info-content p {
+    margin: 10px 20px;
+}
+
+a {
+    color: #FEFEFE;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff3a5e;
+    /* Define a cor do link ao passar o mouse sobre ele */
+}
+
+#contatos {
+    padding: 50px 0;
+}
+
+.contatos-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contato:hover {
+    transform: translateY(-10px);
+}
+
+.contato i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.contato span {
+    font-weight: 500;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#contatos p {
+    color: #CFCFCF;
+}
+
+#contatos h2 {
+    color: #ff3a5e;
+}
+
+#projetos h2 {
+    color: #ff3a5e;
+}
+
+#sobre-mim h3 {
+    color: #ff3a5e;
+}
+
+.p_c {
+    color: black;
+}
