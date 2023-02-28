@@ -388,7 +388,7 @@ footer p {
     align-items: center;
 } */
 
-@media (min-width: 871px) {
+@media (max-width: 871px) {
     .contatos-container {
         display: flex;
         flex-direction: column;
