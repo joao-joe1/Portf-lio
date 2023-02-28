@@ -228,7 +228,30 @@ header {
     }
 }
 
-@media (min-width: 370px) and (max-width: 667px) {
+@media (min-width: 456px) and (max-width: 521px) {
+
+    /* suas regras CSS aqui */
+    .logo-name h1 {
+        display: none;
+    }
+
+    .texto1,
+    .texto2,
+    .texto3 {
+        text-align: center;
+        height: auto;
+    }
+
+    button {
+        left: -11%;
+        /* coloca o ponto central do botão na metade da largura do container */
+        transform: translateX(-50%);
+        /* desloca o botão para a esquerda, para ficar centralizado */
+    }
+
+}
+
+@media (min-width: 370px) and (max-width: 456px) {
 
     /* suas regras CSS aqui */
     .logo-name h1 {
