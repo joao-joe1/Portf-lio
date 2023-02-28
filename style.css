@@ -228,9 +228,9 @@ header {
     }
 }
 
-/* @media (min-width: 1440px) {} */
 
-@media (min-width: 456px) and (max-width: 521px) {
+
+@media (min-width: 440px) and (max-width: 521px) {
 
     /* suas regras CSS aqui */
     .logo-name h1 {
@@ -253,7 +253,7 @@ header {
 
 }
 
-@media (min-width: 370px) and (max-width: 456px) {
+@media (min-width: 370px) and (max-width: 430px) {
 
     /* suas regras CSS aqui */
     .logo-name h1 {
