@@ -1,6 +1,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #FEFEFE;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .left {
@@ -225,5 +228,94 @@ header {
 
     100% {
         opacity: 0;
+    }
+}
+
+/* @media (min-width: 1440px) {} */
+
+@media (min-width: 456px) and (max-width: 521px) {
+
+    /* suas regras CSS aqui */
+    .logo-name h1 {
+        display: none;
+    }
+
+    .texto1,
+    .texto2,
+    .texto3 {
+        text-align: center;
+        height: auto;
+    }
+
+    button {
+        left: -11%;
+        /* coloca o ponto central do botão na metade da largura do container */
+        transform: translateX(-50%);
+        /* desloca o botão para a esquerda, para ficar centralizado */
+    }
+
+}
+
+@media (min-width: 370px) and (max-width: 456px) {
+
+    /* suas regras CSS aqui */
+    .logo-name h1 {
+        display: none;
+    }
+
+    .texto1,
+    .texto2,
+    .texto3 {
+        text-align: center;
+    }
+
+    button {
+        left: -25%;
+        /* coloca o ponto central do botão na metade da largura do container */
+        transform: translateX(-50%);
+        /* desloca o botão para a esquerda, para ficar centralizado */
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /* estilos para telas menores que 768px */
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .texto1,
+    .texto2,
+    .texto3 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    /* estilos para telas entre 768px e 992px */
+    .left {
+        width: 70%;
+    }
+
+    .right {
+        width: 30%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* estilos para telas maiores que 992px */
+    .left {
+        width: 50%;
+    }
+
+    .right {
+        width: 50%;
     }
 }
