@@ -382,3 +382,19 @@ footer p {
     color: black;
 }
 
+/* .contatos-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+@media (min-width: 871px) {
+    .contatos-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        /* Espaçamento entre as colunas */
+    }
+}
