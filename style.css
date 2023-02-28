@@ -1,9 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #FEFEFE;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
 }
 
 .left {
