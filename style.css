@@ -244,7 +244,7 @@ header {
 
     .button-hide {
         display: block;
-        left: 100%;
+        margin-left: 135px;
     }
 }
 
