@@ -3,6 +3,10 @@ body {
     color: #FEFEFE;
 }
 
+.button-hide {
+    display: none;
+}
+
 .left {
     background-color: #212020;
     height: 100%;
@@ -228,7 +232,21 @@ header {
     }
 }
 
+@media (max-width: 369px) {
 
+    .logo-name {
+        display: none;
+    }
+
+    button {
+        display: none;
+    }
+
+    .button-hide {
+        display: block;
+        left: 100%;
+    }
+}
 
 @media (min-width: 522px) and (max-width: 627px) {
 
@@ -236,9 +254,11 @@ header {
     .logo-name h1 {
         display: none;
     }
-.logo-name {
-    display: none;
-}
+
+    .logo-name {
+        display: none;
+    }
+
     .texto1,
     .texto2,
     .texto3 {
